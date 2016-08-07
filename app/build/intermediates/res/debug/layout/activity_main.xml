@@ -1,4 +1,4 @@
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,15 +9,15 @@
     android:paddingBottom="16dp"
     android:background="@drawable/background"
     tools:context=".MainActivity">
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:gravity="center">
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:gravity="center"
+        >
+
         <EditText
             android:id="@+id/name"
             android:layout_width="wrap_content"
@@ -27,7 +27,7 @@
             android:layout_marginRight="10dp"
             android:layout_marginTop="20dp"
             android:ems="15"
-            android:hint="User Name"
+            android:hint="Registration Number"
             android:inputType="text"
             />
         <EditText
@@ -40,31 +40,45 @@
             android:layout_marginTop="20dp"
             android:ems="15"
             android:hint="Password"
-
             android:inputType="textPassword"/>
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/login"
             android:textSize="10sp"
             android:text="LogIn"
-            android:onClick="login"/>
+            android:onClick="login"
+            android:textColor="#0000CD"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/reg"
             android:textSize="10sp"
             android:text="Register"
-            android:onClick="regis"/>
-    </LinearLayout>
+            android:onClick="register"
+            android:textColor="#0000CD"/>
+
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:ems="15"
+                android:hint="Registration Number"
+                />
+
+            <Button
+                android:textColor="#0000CD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/res"
+                android:textSize="10sp"
+                android:text="Get_Your_Result"
+                android:onClick="res"/>
     </LinearLayout>
 
-</RelativeLayout>
-<!-- From: file:/E:/Android/ExamTakerOnline/app/src/main/res/layout/activity_main.xml -->
+</ScrollView><!-- From: file:/E:/Android/ExamTakerOnline/app/src/main/res/layout/activity_main.xml -->

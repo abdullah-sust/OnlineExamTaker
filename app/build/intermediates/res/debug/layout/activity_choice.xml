@@ -16,40 +16,42 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <CheckBox
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:checkedButton="@+id/view"
+                android:id="@+id/group">
+            <RadioButton
                 android:id="@+id/c1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:scaleX="2.5"
-                android:scaleY="2.5"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=" AdminSite  "
-                android:textSize="40dp"
+                android:text="AdminSite"
+                android:scaleX="1.0"
+                android:scaleY="1.0"
                 android:textStyle="bold"
+                android:textSize="40dp"
                 android:textColor="#0000CD"/>
-            </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <CheckBox
+
+
+
+            <RadioButton
                 android:id="@+id/c2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:scaleX="2.5"
-                android:scaleY="2.5"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=" StudentSite"
-                android:textSize="40dp"
+                android:scaleX="1.0"
+                android:scaleY="1.0"
+                android:text="StudentSite"
                 android:textStyle="bold"
+                android:textSize="40dp"
                 android:textColor="#0000CD"/>
+
+            </RadioGroup>
+
         </LinearLayout>
         <Button
             android:onClick="but_sub"
+            android:textColor="#0000CD"
             android:id="@+id/sub_b"
             android:layout_width="100dp"
             android:layout_height="50dp"

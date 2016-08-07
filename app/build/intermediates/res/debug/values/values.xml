@@ -198,6 +198,7 @@
     <string name="title_activity_choice">Choice</string>
     <string name="title_activity_exam_start">ExamStart</string>
     <string name="title_activity_main_activity2">MainActivity2</string>
+    <string name="title_activity_show_result">ShowResult</string>
     <string name="title_activity_view_all">ViewAll</string>
     <!-- From: file:/E:/Android/ExamTakerOnline/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
